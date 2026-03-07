@@ -1,37 +1,22 @@
-# Core frontend
 streamlit
-requests
-
-# Backend API
 fastapi
 uvicorn
-python-multipart
+requests
 
-# Math / symbolic computation
 sympy
 numpy
-
-# RAG / embeddings / transformers
-sentence-transformers
-transformers
-faiss-cpu
-torch
-
-# Vector database
-chromadb
-
-# OCR
-paddleocr
-paddlepaddle
 pillow
 
-# Speech-to-text
+sentence-transformers
+transformers
+
+chromadb
+
+paddleocr
+
 openai-whisper
 
-# HuggingFace model downloads
-huggingface-hub
-
-# Utilities commonly required by above libs
-scikit-learn
+python-multipart
 tqdm
-pydantic
+scikit-learn
+huggingface-hub
