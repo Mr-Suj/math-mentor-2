@@ -1,9 +1,9 @@
 import streamlit as st
 import requests
 
-TEXT_API = "http://localhost:7860/solve_text" 
-IMAGE_API = "http://localhost:7860/solve_image"
-AUDIO_API = "http://localhost:7860/solve_audio"
+TEXT_API = "http://localhost:8000/solve_text"
+IMAGE_API = "http://localhost:8000/solve_image"
+AUDIO_API = "http://localhost:8000/solve_audio"
 
 st.set_page_config(
     page_title="AI Math Mentor",
@@ -212,4 +212,5 @@ Users can submit problems through **text, images, or audio**, and the system aut
 """)
 
 st.sidebar.markdown("---")
+
 st.sidebar.caption("Built with ❤️ using AI, RAG, and Multi-Agent Systems")
