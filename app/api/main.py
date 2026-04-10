@@ -67,3 +67,7 @@ async def solve_audio(file: UploadFile = File(...)):
         "explanation": "Speech-to-text disabled to reduce memory usage",
         "verification": {}
     }
+
+@app.get("/")
+def home():
+    return {"message": "Backend is running"}
