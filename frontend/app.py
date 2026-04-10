@@ -1,9 +1,11 @@
 import streamlit as st
 import requests
 
-TEXT_API = "http://localhost:8000/solve_text"
-IMAGE_API = "http://localhost:8000/solve_image"
-AUDIO_API = "http://localhost:8000/solve_audio"
+BASE_URL = "https://math-mentor-backend-a0jw.onrender.com"
+
+TEXT_API = f"{BASE_URL}/solve_text"
+IMAGE_API = f"{BASE_URL}/solve_image"
+AUDIO_API = f"{BASE_URL}/solve_audio"
 
 st.set_page_config(
     page_title="AI Math Mentor",
