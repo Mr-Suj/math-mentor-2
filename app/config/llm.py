@@ -1,15 +1,22 @@
-import google.generativeai as genai
 import os
-from dotenv import load_dotenv
+import google.generativeai as genai
 
-load_dotenv()
+# Configure API key
+genai.configure(api_key=os.getenv("GEMINI_API_KEY"))
 
-client = genai.Client(api_key=os.getenv("GEMINI_API_KEY"))
+def generate_response(prompt: str) -> str:
+    try:
+        # Load Gemini model
+        model = genai.GenerativeModel("gemini-pro")
 
+        # Generate response
+        response = model.generate_content(prompt)
 
-def generate_response(prompt: str):
-    response = client.models.generate_content(
-        model="gemini-2.5-flash",
-        contents=prompt
-    )
-    return response.text
+        # Return text safely
+        if response and hasattr(response, "text"):
+            return response.text
+        else:
+            return "No response generated."
+
+    except Exception as e:
+        return f"Error generating response: {str(e)}"
