@@ -12,9 +12,7 @@ transformers
 
 chromadb
 
-paddleocr
 
-openai-whisper
 
 python-multipart
 tqdm
