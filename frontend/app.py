@@ -40,7 +40,7 @@ with tab1:
         else:
 
             with st.spinner("Solving problem..."):
-
+                st.write(TEXT_API)
                 response = requests.post(
                     TEXT_API,
                     json={"question": question}
