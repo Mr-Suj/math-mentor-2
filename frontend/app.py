@@ -1,7 +1,7 @@
 import streamlit as st
 import requests
 
-BASE_URL = "https://math-mentor-backend-a0jw.onrender.com"
+BASE_URL = "https://math-mentor-backend-aojw.onrender.com"
 
 TEXT_API = f"{BASE_URL}/solve_text"
 IMAGE_API = f"{BASE_URL}/solve_image"
