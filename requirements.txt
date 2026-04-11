@@ -12,7 +12,7 @@ transformers
 
 chromadb
 
-
+google-genai
 
 python-multipart
 tqdm
